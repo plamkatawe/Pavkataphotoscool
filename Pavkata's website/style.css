@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+body {
+    background: linear-gradient(rgb(171, 171, 171), rgb(46, 46, 46));
+    height: 327vh;
+}
+
+header {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 50%;
+    max-width: 680px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
